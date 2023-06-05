@@ -1,20 +1,37 @@
 body {
   display: flex;
   flex-direction: row;
-  background-color: rgb(241, 241, 241);
+  background-color: rgb(249, 249, 255);
 }
 
 .banner_side {
   background-image: url(images/taryn-kaahanui-jtVFv8mDDBU-unsplash.jpg);
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
-  width: 45%;
+  background-position: left;
+  width: 30%;
   height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
 
-.banner {
+.banner{
   display: flex;
+  align-items: center;
+  justify-content: center;
   flex-direction: row;
+  height: 23%;
+  background-color: rgba(0,0,0,.5);
+}
+
+.banner>.banner_child{
+  color: white;
+}
+
+.banner>img{
+  width: 15vh;
+  height: 20vh;
 }
 
 @font-face {
@@ -24,6 +41,7 @@ body {
 
 h1 {
   font-family: "norse-bold";
+  font-size: 5em;
 }
 
 a {
@@ -32,6 +50,15 @@ a {
 
 button[type="submit"] {
   background: orange;
+}
+
+
+.form_side{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
 
 /* http://meyerweb.com/eric/tools/css/reset/ 
