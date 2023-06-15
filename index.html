@@ -31,27 +31,27 @@
               </div>
               <div class="row_field">
                 <label for="surname"> LAST NAME </label>
-                <input type="text" name="surname" id="surname">
+                <input type="text" name="surname" id="surname" required>
               </div>
           </fieldset>
           <fieldset>
               <div class="row_field">
                 <label for="email"> EMAIL </label>
-                <input type="email" name="email" id="email">
+                <input type="email" name="email" id="email" placeholder="ex. john@gmail.com" required>
               </div>
               <div class="row_field">
                 <label for="phone_number"> PHONE NUMBER </label>
-                <input type="tel" name="tel" id="tel">
+                <input type="tel" name="tel" id="tel" pattern="[0-9]{10}" placeholder="ex. 3405559898" required>
               </div>
           </fieldset>
           <fieldset>
               <div class="row_field">
                 <label for="password"> PASSWORD </label>
-                <input type="password" name="password" id="password">
+                <input class="error" type="password" name="password" id="password" required>
               </div>
               <div class="row_field">
                 <label for="password2"> CONFIRM PASSWORD </label>
-                <input type="password" name="password2" id="password2">
+                <input class="error" type="password" name="password2" id="password2" required>
               </div>
           </fieldset>
         </div>
