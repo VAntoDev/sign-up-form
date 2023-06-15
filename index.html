@@ -13,43 +13,52 @@
       <img class="banner_child" src="images/odin-lined.png" alt="odin logo">
       <h1 class="banner_child"> ODIN </h1>
     </div>
-    <div></div>
+    <div class="credit">
+      <h4 class="credit-text"> Credit to Taryn Kaahanui on <a href="https://unsplash.com/photos/jtVFv8mDDBU">Unsplash</a></h4>
+    </div>
   </div>
   <div class="form_side">
-    <p> This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up <i>now</i> to get started.</p>
+    <p> This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. <br>  Sign up <i>now</i> to get started.</p>
     <p> You <i>know</i> you want to. </p>
     <div class="form_div">
-      <h2> Let's do this! </h2>
       <form action="http://127.0.0.1:5502/index.html" action="post">
         <div class="user_data">
+          <h2> Let's do this! </h2>
           <fieldset>
-            <label for="name"> First Name </label>
-            <input type="text" name="name" id="name">
-
-            <label for="surname"> Last Name </label>
-            <input type="text" name="surname" id="surname">
+              <div class="row_field">
+                <label for="name"> FIRST NAME </label>
+                <input type="text" name="name" id="name" required>
+              </div>
+              <div class="row_field">
+                <label for="surname"> LAST NAME </label>
+                <input type="text" name="surname" id="surname">
+              </div>
           </fieldset>
-
           <fieldset>
-            <label for="email"> Email </label>
-            <input type="email" name="email" id="email">
-
-            <label for="phone_number"> Phone Number </label>
-            <input type="tel" name="tel" id="tel">
+              <div class="row_field">
+                <label for="email"> EMAIL </label>
+                <input type="email" name="email" id="email">
+              </div>
+              <div class="row_field">
+                <label for="phone_number"> PHONE NUMBER </label>
+                <input type="tel" name="tel" id="tel">
+              </div>
           </fieldset>
-
           <fieldset>
-            <label for="password"> Password </label>
-            <input type="password" name="password" id="password">
-
-            <label for="password2"> Confirm Password </label>
-            <input type="password2" name="password2" id="password2">
+              <div class="row_field">
+                <label for="password"> PASSWORD </label>
+                <input type="password" name="password" id="password">
+              </div>
+              <div class="row_field">
+                <label for="password2"> CONFIRM PASSWORD </label>
+                <input type="password" name="password2" id="password2">
+              </div>
           </fieldset>
         </div>
         <button type="submit"> Create Account </button>
       </form>
     </div>
-    <p> Already have an account? <a>Log in</a></p>
+    <p class="login"> Already have an account? <a href="">Log in</a></p>
   </div>
 </body>
 </html>

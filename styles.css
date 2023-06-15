@@ -1,7 +1,7 @@
 body {
   display: flex;
   flex-direction: row;
-  background-color: rgb(249, 249, 255);
+  background-color: #e9e9e91f;
 }
 
 .banner_side {
@@ -21,7 +21,7 @@ body {
   align-items: center;
   justify-content: center;
   flex-direction: row;
-  height: 23%;
+  height: 21.5%;
   background-color: rgba(0,0,0,.5);
 }
 
@@ -30,13 +30,31 @@ body {
 }
 
 .banner>img{
-  width: 15vh;
-  height: 20vh;
+  width: 14vh;
+  height: 18vh;
+}
+
+.credit-text{
+  position: absolute;
+  bottom: 1%;
+  left: 7%;
+  font-family: roboto;
+  font-size: 1.1em;
+}
+
+.credit-text a{
+  color: rgb(0, 0, 0);
+  text-decoration: underline;
 }
 
 @font-face {
   font-family: "norse-bold";
   src: url(images/Norse-Bold.otf);
+}
+
+@font-face{
+  font-family: "roboto";
+  src: url(images/Roboto-Black.ttf)
 }
 
 h1 {
@@ -45,20 +63,119 @@ h1 {
 }
 
 a {
-  color: orange;
+  color: #E48533;
+  text-decoration: none;
+  transition: all 0.3s;
 }
 
-button[type="submit"] {
-  background: orange;
+a:hover{
+  color: #d37c30;
 }
-
 
 .form_side{
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  height: 97vh;
+  width: 70vw;
+}
+
+.user_data {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  box-shadow: 0 4px 2px -3px rgba(0, 0, 0, 0.19), 0 -4px 2px -3px rgba(0, 0, 0, 0.19);
+  width: 70vw;
+}
+
+h2{
+  margin-left: 2%;
+  color: #212427;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.8em;
+}
+
+p{
+  align-self: start;
+  margin-left: 2%;
+  width: 60%;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 2em;
+  font-weight: 800;
+  color:#212427;
+}
+
+fieldset{
+  display: flex;
+  flex-direction: row;
+}
+
+label{
+  font-size: 2em;
+  margin-left: 3px;
+}
+
+input{
+  border: 1px solid rgb(187, 187, 187);
+  border-radius: 5px;
+  padding: 5px;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #e9e9e91f;
+}
+
+input:focus{
+  background-color: rgb(254, 254, 254);
+  border: 1px solid rgb(231, 231, 231);
+  outline: 0;
+  box-shadow: 2px 2px 4px -3px rgba(0, 0, 0, 0.19);
+}
+
+input:valid:focus{
+  border-color: rgb(81, 81, 241);
+}
+
+input:invalid:focus{
+  border-color: red;
+}
+
+button[type="submit"]{
+  width: 18%;
+  height: 50px;
+  margin-left: 2.2%;
+  margin-top: 2%;
+  border: 2px solid #E48533;
+  background-color: #E48533;
+  border-radius: 10px;
+  color: white;
+  font-size: 115%;
+  font-weight: 800;
+  box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.19);
+  transition: all 0.3s;
+}
+
+button[type="submit"]:hover {
+  background-color: #e97f22;
+  border-color: #e97f22;
+  box-shadow: 2px 2px 5px 3px rgba(0, 0, 0, 0.19);
+}
+
+.row_field{
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  margin-right: 10%;
+  margin-left: 2%;
+  margin-bottom: 2%;
+  font-family: "roboto";
+  font-size: 0.4em;
+  letter-spacing: 0.2em;
+  color: #212427cc;
+}
+
+.login{
+  margin-top: 2%;
+  font-size: 1em;
 }
 
 /* http://meyerweb.com/eric/tools/css/reset/ 
