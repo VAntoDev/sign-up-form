@@ -39,7 +39,7 @@ body {
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
   position: absolute;
   bottom: 1%;
-  left: 7%;
+  left: 5.5%;
   font-family: roboto;
   font-size: 1.1em;
 }
@@ -183,6 +183,68 @@ button[type="submit"]:active{
   margin-top: 2%;
   font-size: 1em;
 }
+
+/* When the browser is at least 600px and above min-width: 600px*/
+@media screen and (max-width: 1500px) {
+  .form_side {
+    /* Apply some styles */
+    height: 100vh;
+  }
+
+  p {
+    font-size: 1em;
+  }
+
+  .user_data h2{
+    font-size: 1.5em;
+  }
+
+  .credit-text{
+    bottom: 1%;
+    left: 5.5%;
+    font-size: 0.82em;
+  }
+}
+
+@media screen and (max-width: 1700px) {
+  .form_side {
+    /* Apply some styles */
+    height: 100vh; 
+  }
+
+  p {
+    font-size: 0.8em;
+  }
+}
+
+@media screen and (max-width: 1800px) {
+  .form_side {
+    /* Apply some styles */
+    height: 100vh;
+  }
+
+  p {
+    font-size: 1.5em;
+  }
+
+}
+
+@media screen and (min-width: 2000px) {
+  .credit-text{
+    bottom: 1%;
+    left: 5.5%;
+    font-size: 1.5em;
+  }
+}
+
+@media screen and (min-width: 2200px) {
+  .credit-text{
+    bottom: 1%;
+    left: 5.5%;
+    font-size: 1.7em;
+  }
+}
+
 
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
